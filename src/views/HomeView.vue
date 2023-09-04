@@ -54,7 +54,7 @@
 
         <div class="inlineblock">
           <div class="flex justify-center">
-          <img class="w-60 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="TranPhoto.png">
+          <img class="w-60 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
         </div>
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-4"> Lor ChingVey</h1>
           <p class="font-bold text-xl pt-2 text-center">- Introduction</p>
