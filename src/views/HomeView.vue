@@ -32,7 +32,7 @@
           <a href="" class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100">Download CV</a>
         </div>
         </div>
-        <img class="w-[500px] object-cover bg-transparent rounded-[200px]" src="https://s3-alpha.figma.com/hub/file/2966856926/2f4e4570-ef9e-4fbf-9cfc-4fb952c47385-cover.png">
+        <img class="w-[500px] object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
       </div>
     </div>
 
@@ -54,7 +54,7 @@
 
         <div class="inlineblock">
           <div class="flex justify-center">
-          <img class="w-60 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="">
+          <img class="w-60 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="TranPhoto.png">
         </div>
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-4"> Lor ChingVey</h1>
           <p class="font-bold text-xl pt-2 text-center">- Introduction</p>
@@ -105,11 +105,11 @@
             <p class="text-white">Figma</p>
           </div>
           <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
-            <img class="w-[40px]" src="">
+            <img class="w-[40px]" src="/html5-svgrepo-com.svg">
             <p class="text-white">Html</p>
           </div>
           <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
-            <img class="w-[40px]" src="">
+            <img class="w-[40px]" src="/css3-svgrepo-com.svg">
             <p class="text-white">Css</p>
           </div>
           <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
@@ -119,15 +119,15 @@
       </div>
       <div class="flex items-center justify-evenly p-2">
         <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
-            <img class="w-[40px]" src="">
+            <img class="w-[40px]" src="/adobe-illustrator-svgrepo-com.svg">
             <p class="text-white">Illutrator</p>
           </div>
         <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
-            <img class="w-[40px]" src="">
+            <img class="w-[40px]" src="/tailwindcss-icon-svgrepo-com.svg">
             <p class="text-white">Tailwindcss</p>
           </div>
           <div class="bg-neutral-900 flex items-center p-2 rounded-lg">
-            <img class="w-[40px]" src="">
+            <img class="w-[40px]" src="/vue-svgrepo-com.svg">
             <p class="text-white">Vue.js</p>
           </div>
       </div>
@@ -167,33 +167,33 @@
         <li class="list-none text-xl font-bold">Programming andd Design Tools</li>
         <div class="flex items-center justify-center pt-4">
           <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/figma-svgrepo-com.svg">
             <p class="text-white">Figma</p>
           </div>
           <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/html5-svgrepo-com.svg">
             <p class="text-white">Html</p>
           </div>
           <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/css3-svgrepo-com.svg">
             <p class="text-white">Css</p>
           </div>
           <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/js-svgrepo-com.svg">
             <p class="text-white">Javascript</p>
           </div>
       </div>
       <div class="flex items-center justify-center py-2 px-2">
         <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/adobe-illustrator-svgrepo-com.svg">
             <p class="text-white">Illutrator</p>
           </div>
         <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/tailwindcss-icon-svgrepo-com.svg">
             <p class="text-white">Tailwindcss</p>
           </div>
           <div class="bg-neutral-900 flex items-center py-2 px-2 rounded-xl">
-            <img class="w-6" src="">
+            <img class="w-6" src="/vue-svgrepo-com.svg">
             <p class="text-white">Vue.js</p>
           </div>
       </div>
