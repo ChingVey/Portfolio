@@ -1,7 +1,10 @@
+<script setup lang="ts">
+import { Ref, ref } from 'vue';
+import { onClickOutside } from '@vueuse/core'
 
-
-<script setup>
-
+const isModalOpen = ref (false)
+const modal = ref (null)
+onClickOutside(modal, () => (isModalOpen.value = false))
 </script>
 
 <template>
@@ -20,6 +23,8 @@
           </ul>
         </div>
         </div>
+
+
     <div class=" lg:bg-neutral-900 lg:text-white lg:rounded-[45px] lg:grid-cols-4 lg:grid-row-3 lg:grid lg:gap-2 lg:p-4 lg:pt-12 hidden">
       <div class="col-span-4">
         <h5 class=" xl:text-8xl lg:text-7xl font-extrabold text-center">FRONTEND DEVELOPER</h5>
@@ -56,8 +61,8 @@
           <p class="text-md sm:text-xl md:text-2xl font-semibold text-center">Based in Phnom Penh.</p>
           <p></p>
           <div class="flex pt-2 justify-center">
-          <a href="#2nd" class="p-2 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-6">Get to Know me</a>
-          <a href="" class="p-2 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100">Download CV</a>
+          <a href="#2nd" class="p-2 border border-1 transition duration-100 delay-100 mr-6">Get to Know me</a>
+          <a href="" class="p-2 border border-1 transition duration-100 delay-100">Download CV</a>
         </div>
         </div>
       </div>
@@ -86,16 +91,33 @@
         <li class="text-sm list-none font-semibold">Place of Birth: Rattnakiri</li>
       </div>
       </div>
-      <div class=" bg-white col-span-2 text-black p-4">
+      <div @click="isModalOpen = true" class=" bg-white col-span-2 text-black p-4 cursor-pointer hover:scale-105 transition ease-in-out duration-200">
+        <div class="flex justify-between">
         <li class="list-none text-xl font-bold">Personal Summary</li>
+        <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                </svg>
+              </div>
         <p class="text-sm pt-4">A Highly creative and multitalented Frontend Development and UX-UI Designing
-            and highly skilled in socializing with client and co-worker. See more</p>
+            and highly skilled in socializing with client and co-worker. <span class=" text-right font-bold">see more</span></p>
       </div>
+
+      <teleport to="#modal">
+              <transition name="modal">
+              <div v-if="isModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
+                <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta delectus nesciunt,
+                </div>
+              </div>
+            </transition>
+            </teleport>
+
       <div class=" bg-white text-center rounded-bl-[40px] col-span-2 text-black p-4">
         <li class="list-none text-xl font-bold">Programming andd Design Tools</li>
         <div class="flex items-center justify-center p-2 pt-3">
           <div class="bg-neutral-900 hover:bg-neutral-700 border-[3px] border-sky-400 flex items-center p-2 rounded-lg mx-2">
-            <a class="flex items-center" href="www.figma.com">
+            <a class="flex items-center" href="https://www.figma.com/">
             <img class="w-[40px]" src="/figma-svgrepo-com.svg">
             <p class="text-white">Figma</p>
           </a>
@@ -165,44 +187,74 @@
     </div>
       <div class="bg-white rounded-[30px] text-center col-span-2">04</div>
 
-      <div class="bg-white rounded-[30px] text-center col-span-4 text-black p-4">
+      <div @click="isModalOpen = true" class="cursor-pointer bg-white rounded-[30px] text-center col-span-4 text-black p-4">
+        <div class=" flex justify-between items-center">
         <li class="list-none text-lg sm:text-xl md:text-2xl font-bold">Personal Summary</li>
+        <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                </svg>
+              </div>
         <p class="text-xs sm:text-md pt-4">A Highly creative and multitalented Frontend Development and UX-UI Designing
-            and highly skilled in socializing with client and co-worker. See more</p>
-      </div>
+            and highly skilled in socializing with client and co-worker. <span class="block font-bold">see more</span></p>
+        </div>
+
+            <teleport to="#modal">
+              <transition name="modal">
+              <div v-if="isModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center overflow-hidden">
+                <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
+                  A Highly creative and multitalented Frontend Development and UX-UI Designing
+            and highly skilled in socializing with client and co-worker.
+                </div>
+              </div>
+            </transition>
+            </teleport>
 
       <div class="bg-white rounded-[30px] text-center col-span-4 text-black">
         <li class="list-none text-xl font-bold">Programming and Design Tools</li>
         <div class="flex items-center justify-center sm:pt-4 pt-2">
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
-            <img class="w-6" src="/figma-svgrepo-com.svg">
+            <a class="flex items-center" href="https://www.figma.com/">
+              <img class="w-6" src="/figma-svgrepo-com.svg">
             <p class="text-white">Figma</p>
+          </a>
           </div>
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
-            <img class="w-6" src="/html5-svgrepo-com.svg">
+            <a class="flex items-center" href="https://en.wikipedia.org/wiki/HTML"><img class="w-6" src="/html5-svgrepo-com.svg">
             <p class="text-white">Html</p>
+          </a>
           </div>
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
-            <img class="w-6" src="/css3-svgrepo-com.svg">
+            <a class="flex items-center" href="https://en.wikipedia.org/wiki/CSS">
+              <img class="w-6" src="/css3-svgrepo-com.svg">
             <p class="text-white">Css</p>
+          </a>
           </div>
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+            <a class="flex items-center" href="https://en.wikipedia.org/wiki/JavaScript">
             <img class="w-6" src="/js-svgrepo-com.svg">
             <p class="text-white">Javascript</p>
+          </a>
           </div>
       </div>
       <div class="flex items-center justify-center p-1.5">
         <div class="bg-neutral-900 border-2 border-sky-400 flex items-center  p-1.5 rounded-lg sm:p-3 mx-1">
+          <a class="flex items-center" href="https://www.adobe.com/">
             <img class="w-6" src="/adobe-illustrator-svgrepo-com.svg">
             <p class="text-white">Illutrator</p>
+          </a>
           </div>
         <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <a class="flex items-center" href="https://tailwindcss.com/">
             <img class="w-6" src="/tailwindcss-icon-svgrepo-com.svg">
             <p class="text-white">Tailwindcss</p>
+          </a>
           </div>
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
-            <img class="w-6" src="/vue-svgrepo-com.svg">
+            <a class="flex items-center" href="https://vuejs.org/">
+              <img class="w-6" src="/vue-svgrepo-com.svg">
             <p class="text-white">Vue.js</p>
+          </a>
           </div>
       </div>
       </div>
@@ -255,3 +307,15 @@
 </main>
 
 </template>
+
+<style>
+.modal-enter-active,
+.modal-leave-active{
+  transition: all 0.25s ease;
+}
+.modal-enter-from,
+.modal-leave-to{
+  opacity: 0;
+  transform: scale(1.1);
+}
+</style>
