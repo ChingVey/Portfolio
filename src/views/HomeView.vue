@@ -173,7 +173,7 @@
 
       <div class="bg-white rounded-[30px] text-center col-span-4 text-black">
         <li class="list-none text-xl font-bold">Programming and Design Tools</li>
-        <div class="flex items-center justify-center pt-4">
+        <div class="flex items-center justify-center sm:pt-4 pt-2">
           <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <img class="w-6" src="/figma-svgrepo-com.svg">
             <p class="text-white">Figma</p>
