@@ -54,7 +54,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
               <transition name="modal">
               <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
                 <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
-                  <img class="w-96" src="public/CVSAMPLE.png">
+                  <img class="w-96" src="/CVSAMPLE.png">
                 </div>
               </div>
             </transition>
@@ -85,7 +85,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
               <transition name="modal">
               <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
                 <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
-                  <img class="w-96" src="public/CVSAMPLE.png">
+                  <img class="w-96" src="/CVSAMPLE.png">
                 </div>
               </div>
             </transition>
