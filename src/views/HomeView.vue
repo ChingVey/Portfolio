@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { Ref, ref } from 'vue';
 import { onClickOutside } from '@vueuse/core'
-
+const ModalOpen = ref (false)
 const isModalOpen = ref (false)
+
 const modal = ref (null)
+
 onClickOutside(modal, () => (isModalOpen.value = false))
+onClickOutside(modal, () => (ModalOpen.value = false))
 </script>
 
 <template>
@@ -35,17 +38,27 @@ onClickOutside(modal, () => (isModalOpen.value = false))
           <p class="font-bold text-xl pt-4">- Introduction</p>
           <p class="text-3xl font-semibold pt-4">Frontend Developer and UX-UI Designer,</p>
           <p class="text-3xl font-semibold">Based in Phnom Penh.</p>
-          <p class="text-sm pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non, commodi consectetur, similique,</p>
+          <p class="text-sm pt-4"></p>
           <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non, commodi consectetur, similique,</p>
           <div class="flex pt-4">
           <a href="#2nd" class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-6">Get to Know me</a>
-          <a href="" class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100">Download CV</a>
+          <a @click="ModalOpen = true" class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100">View CV</a>
         </div>
         </div>
         <img class="w-[500px] object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
       </div>
     </div>
   </div>
+  
+  <teleport to="#modal">
+              <transition name="modal">
+              <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
+                <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
+                  <img class="w-96" src="public/CVSAMPLE.png">
+                </div>
+              </div>
+            </transition>
+            </teleport>
 
     <div class=" w-full h-screen bg-neutral-900 text-white grid p-4 lg:hidden">
 
@@ -62,11 +75,21 @@ onClickOutside(modal, () => (isModalOpen.value = false))
           <p></p>
           <div class="flex pt-2 justify-center">
           <a href="#2nd" class="p-2 border border-1 transition duration-100 delay-100 mr-6">Get to Know me</a>
-          <a href="" class="p-2 border border-1 transition duration-100 delay-100">Download CV</a>
+          <a @click="ModalOpen = true" class="cursor-pointer py-2 px-6 border border-1 transition duration-100 delay-100">View CV</a>
         </div>
         </div>
       </div>
   </main>
+
+  <teleport to="#modal">
+              <transition name="modal">
+              <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
+                <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
+                  <img class="w-96" src="public/CVSAMPLE.png">
+                </div>
+              </div>
+            </transition>
+            </teleport>
 
 
 
@@ -81,7 +104,12 @@ onClickOutside(modal, () => (isModalOpen.value = false))
         <h1 class="text-4xl text-left font-san pl-2 ">Lor ChingVey,</h1>
         <h1 class="text-4xl text-left font-sam pl-2 ">Explore Work</h1>
       </div>
-      <div class=" bg-white text-center row-span-3 rounded-r-[40px]">02</div>
+      <div class=" bg-white text-center row-span-3 rounded-r-[40px] flex justify-end p-4">
+        <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                </svg>
+      </div>
       <div class=" bg-white text-black col-span-1">
         <li class="list-none text-xl font-bold p-4">Personal Infomation</li>
         <div class="items-center p-4">
@@ -107,7 +135,7 @@ onClickOutside(modal, () => (isModalOpen.value = false))
               <transition name="modal">
               <div v-if="isModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
                 <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta delectus nesciunt,
+                  <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta delectus nesciunt,</a>
                 </div>
               </div>
             </transition>
@@ -175,7 +203,12 @@ onClickOutside(modal, () => (isModalOpen.value = false))
         <h1 class="text-4xl text-left font-san pl-2">Lor ChingVey,</h1>
         <h1 class="text-4xl text-left font-sam pl-2">Explore Portfolio</h1>
       </div>
-      <div class="bg-white rounded-[30px] text-center row-span-2 col-span-2">02</div>
+      <div class="bg-white rounded-[30px] text-center row-span-2 col-span-2 text-black flex justify-end p-4">
+        <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                </svg>
+      </div>
       <div class="bg-white rounded-[30px] text-center col-span-2 text-black">
         <li class="list-none text-sm sm:text-xl font-bold p-4">Personal Infomation</li>
         <div class="items-center">
@@ -185,7 +218,7 @@ onClickOutside(modal, () => (isModalOpen.value = false))
         <li class="text-xs sm:text-sm list-none font-semibold">Place of Birth: Rattnakiri</li>
       </div>
     </div>
-      <div class="bg-white rounded-[30px] text-center col-span-2">04</div>
+      <div class="bg-white rounded-[30px] text-center col-span-2 text-black">04</div>
 
       <div @click="isModalOpen = true" class="cursor-pointer bg-white rounded-[30px] text-center col-span-4 text-black p-4">
         <div class=" flex justify-between items-center">
