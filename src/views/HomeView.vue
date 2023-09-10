@@ -66,24 +66,25 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </transition>
     </teleport>
 
-    <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid p-4 lg:hidden">
+    <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white inlineblock lg:hidden">
+      <div class="flex items-center justify-center text-center p-8">
+      <h5 class="text-7xl font-extrabold">FrontEnd Developer</h5>
+    </div>
 
-      <h5 class="text-7xl font-extrabold text-center pt-8">FrontEnd Developer</h5>
-
-      <div class="inlineblock">
-        <div class="flex justify-center">
-          <img class="w-60 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
+      <div class="inlineblock pt-12">
+        <div class="flex justify-center items-center">
+          <img class="w-80 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
         </div>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-4"> Lor ChingVey</h1>
+        <h1 class="text-5xl sm:text-4xl md:text-5xl font-bold text-center pt-4"> Lor ChingVey</h1>
         <p class="font-bold text-xl pt-2 text-center">- Introduction</p>
         <p class="text-md sm:text-xl md:text-2xl font-semibold pt-2 text-center">Frontend Developer and UX-UI Designer,
         </p>
         <p class="text-md sm:text-xl md:text-2xl font-semibold text-center">Based in Phnom Penh.</p>
         <p></p>
-        <div class="flex pt-2 justify-center">
-          <a href="#2nd" class="p-2 border border-1 transition duration-100 delay-100 mr-6">Get to Know me</a>
+        <div class="flex pt-4 justify-center">
+          <a href="#2nd" class="p-3 border border-1 transition duration-100 delay-100 mr-6">Get to Know me</a>
           <a @click="ModalOpen = true"
-            class="cursor-pointer py-2 px-6 border border-1 transition duration-100 delay-100">View CV</a>
+            class="cursor-pointer py-3 px-6 border border-1 transition duration-100 delay-100">View CV</a>
         </div>
       </div>
     </div>
@@ -112,7 +113,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <h1 class="text-4xl text-left font-san "></h1>
         <h1 class="text-4xl text-left font-san "></h1>
       </div>
-      <div class=" bg-white text-center row-span-3 rounded-r-[40px] flex justify-end p-4">
+      <div class=" bg-white text-center row-span-3 rounded-r-[40px] flex justify-end p-4 transition duration-200 delay-175 hover:scale-105">
         <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12"
           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           style="fill: rgba(255, 255, 255, 1)">
@@ -129,7 +130,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         </div>
       </div>
       <div @click="isModalOpen = true"
-        class=" bg-white col-span-2 text-black p-4 cursor-pointer hover:scale-105 transition ease-in-out duration-200">
+        class=" bg-white col-span-2 text-black p-4 cursor-pointer transition duration-200 delay-175 hover:scale-105">
         <div class="flex justify-between">
           <li class="list-none text-xl font-bold">Personal Summary</li>
           <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12"
@@ -229,7 +230,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <h1 class="text-4xl text-left font-san pl-2"></h1>
         <h1 class="text-4xl text-left font-sam pl-2"></h1>
       </div>
-      <div class="bg-white rounded-[30px] text-center row-span-2 col-span-2 text-black flex justify-end p-4">
+      <div class="bg-white rounded-[30px] text-center row-span-2 col-span-2 text-black flex justify-end p-4 transition duration-200 delay-175 hover:scale-105">
         <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12"
           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           style="fill: rgba(255, 255, 255, 1)">
@@ -252,7 +253,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </div>
 
       <div @click="isModalOpen = true"
-        class="cursor-pointer bg-white rounded-[30px] text-center col-span-4 text-black p-4">
+        class="cursor-pointer bg-white rounded-[30px] text-center col-span-4 text-black p-4 transition duration-200 delay-175 hover:scale-105">
         <div class=" flex justify-between items-center">
           <li class="list-none text-lg sm:text-xl md:text-2xl font-bold">Personal Summary</li>
           <svg class=" bg-black rounded-full -rotate-45 w-8 h-8 lg:w-16 lg:h-16  md:w-12 md:h-12"
