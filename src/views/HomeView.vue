@@ -428,7 +428,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
     <div class="bg-rose-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105">
       <div class="flex justify-between items-center p-3">
-      <img class="w-12" src="/telegram-svgrepo-com (1).svg">
+      <img class="w-12" src="/telegram-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
       <li class="list-none text-left pl-4 font-bold text-black">Telegram</li>
