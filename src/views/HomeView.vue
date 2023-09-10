@@ -37,11 +37,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
           <div class="inlineblock">
             <h1 class="text-6xl font-bold"> Lor ChingVey</h1>
             <p class="font-bold text-xl pt-4">- Introduction</p>
-            <p class="text-3xl font-semibold pt-4">Frontend Developer and UX-UI Designer,</p>
-            <p class="text-3xl font-semibold">Based in Phnom Penh.</p>
+            <p class="text-3xl font-semibold pt-4">Frontend Developer and<span class="block">UX-UI Designer, based</span></p>
+            <p class="text-3xl font-semibold">in Phnom Penh.</p>
             <p class="text-sm pt-4"></p>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non, commodi consectetur,
-              similique,</p>
             <div class="flex pt-4">
               <a href="#2nd"
                 class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-6">Get to
@@ -68,7 +66,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white inlineblock lg:hidden">
       <div class="flex items-center justify-center text-center py-8">
-      <h5 class="text-7xl overflow-hidden sm:text-7xl font-extrabold">FrontEnd Developer</h5>
+      <h5 class="text-7xl font-extrabold">FrontEnd Developer</h5>
     </div>
 
       <div class="inlineblock pt-8">
@@ -108,7 +106,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       class="lg:w-[1500px] lg:h-[800px] lg:bg-neutral-900 lg:text-white lg:rounded-[45px] lg:grid-cols-4 lg:grid lg:grid-rows-3 lg:gap-4 lg:p-4 hidden">
       <div class=" col-span-3">
         <div class="flex justify-between items-center">
-          <h5 class="text-7xl text-left font-bold p-2">WORK</h5>
+          <h5 class="text-7xl text-left font-bold p-2">About Me</h5>
         </div>
         <h1 class="text-4xl text-left font-san "></h1>
         <h1 class="text-4xl text-left font-san "></h1>
@@ -157,7 +155,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
       <div class=" bg-white text-center rounded-bl-[40px] col-span-2 text-black p-4">
         <li class="list-none text-xl font-bold">Programming andd Design Tools</li>
-        <div class="flex items-center justify-center p-2 pt-3">
+        <div class="flex items-center justify-center p-2 pt-7">
           <div
             class="bg-neutral-900 hover:bg-neutral-700 border-[3px] border-sky-400 flex items-center p-2 rounded-lg mx-2">
             <a class="flex items-center" href="https://www.figma.com/">
@@ -224,7 +222,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl font-bold bg-white text-black rounded-[35px] py-4 px-12 mt-4">Work</h5>
+          <h5 class="text-7xl font-bold bg-white text-black rounded-[35px] py-4 px-12 mt-4">About Me</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
@@ -347,7 +345,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </div>
 
       <div class=" bg-white rounded-[30px] col-span-2 p-4 flex justify-between">
-        <h1 class="text-black font-bold text-7xl">Hire Me</h1>
+        <h1 class="text-black font-bold text-7xl">Projects</h1>
       </div>
 
       <div class=" bg-violet-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
@@ -367,8 +365,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </div>
 
       <div class=" bg-white rounded-[30px] text-center col-span-2 row-span-2">
-        <div class="flex justify-between items-center p-3">
-    </div>
+        <video autoplay loop muted playsinline class="background-video cursor-default w-full h-full object-cover rounded-[29px]">
+          <source src="/Screen Recording 2023-07-30 at 2.31.35 PM.mp4" type="video/mp4"/>
+        </video>
       </div>
 
       <div class=" bg-sky-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
@@ -390,14 +389,10 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     </div>
     
 
-
-
-
-
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-8 sm:p-12 mt-4">Contact</h5>
+          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-8 sm:px-12 mt-4">Contact</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
@@ -435,7 +430,11 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       <li class="list-none text-left pl-4 font-bold text-black">Telegram</li>
     </div>
 
-    <div class="bg-white rounded-[30px] text-center col-span-4 row-span-4">04</div>
+    <div class="bg-white rounded-[30px] text-center col-span-4 row-span-4">
+      <video autoplay loop muted playsinline class="background-video cursor-default w-full h-full object-cover rounded-[29px]">
+          <source src="/Screen Recording 2023-07-30 at 2.31.35 PM.mp4" type="video/mp4"/>
+        </video>
+    </div>
   </div>
 
 </main></template>
