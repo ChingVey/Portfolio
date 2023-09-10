@@ -71,7 +71,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       <h5 class="text-7xl font-extrabold">FrontEnd Developer</h5>
     </div>
 
-      <div class="inlineblock pt-12">
+      <div class="inlineblock pt-8">
         <div class="flex justify-center items-center">
           <img class="w-72 sm:w-80 md:w-96 object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
         </div>
@@ -397,7 +397,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-12 mt-4">Contact</h5>
+          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-8 sm:p-12 mt-4">Contact</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
