@@ -366,7 +366,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
       <div class=" bg-white rounded-[30px] text-center col-span-2 row-span-2">
         <video autoplay loop muted playsinline class="background-video cursor-default w-full h-full object-cover rounded-[29px]">
-          <source src="/Screen Recording 2023-07-30 at 2.31.35 PM.mp4" type="video/mp4"/>
+          <source src="/Projects.mp4" type="video/mp4"/>
         </video>
       </div>
 
@@ -432,7 +432,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
     <div class="bg-white rounded-[30px] text-center col-span-4 row-span-4">
       <video autoplay loop muted playsinline class="background-video cursor-default w-full h-full object-cover rounded-[29px]">
-          <source src="/Screen Recording 2023-07-30 at 2.31.35 PM.mp4" type="video/mp4"/>
+          <source src="/Projects.mp4" type="video/mp4"/>
         </video>
     </div>
   </div>
