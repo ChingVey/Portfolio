@@ -66,9 +66,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </transition>
     </teleport>
 
-    <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid lg:hidden">
-      <div class="flex items-center justify-center text-center p-8">
-      <h5 class="text-7xl font-extrabold">FrontEnd Developer</h5>
+    <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white inlineblock lg:hidden">
+      <div class="flex items-center justify-center text-center py-8">
+      <h5 class="text-7xl overflow-hidden sm:text-7xl font-extrabold">FrontEnd Developer</h5>
     </div>
 
       <div class="inlineblock pt-8">
