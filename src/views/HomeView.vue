@@ -223,7 +223,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl font-bold bg-white text-black rounded-[35px] py-4 px-24 mt-4">Work</h5>
+          <h5 class="text-7xl font-bold bg-white text-black rounded-[35px] py-4 px-12 mt-4">Work</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
@@ -396,7 +396,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-24 mt-4">Contact</h5>
+          <h5 class="text-7xl bg-white text-black rounded-[35px] font-bold py-4 px-12 mt-4">Contact</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
