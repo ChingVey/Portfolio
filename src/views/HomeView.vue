@@ -222,7 +222,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <div class=" w-[1000px] h-[1000px] bg-neutral-900 text-white grid grid-cols-4 grid-rows-5 gap-4 p-4 lg:hidden">
       <div class=" rounded-[30px] col-span-4">
         <div class="flex justify-center items-center">
-          <h5 class="text-7xl font-bold bg-white text-black rounded-[35px] py-4 px-12 mt-4">About Me</h5>
+          <h5 class="text-6xl font-bold bg-white text-black rounded-[35px] py-4  px-8 sm:px-12 mt-4">About Me</h5>
         </div>
 
         <h1 class="text-4xl text-left font-san pl-2"></h1>
@@ -348,21 +348,25 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <h1 class="text-black font-bold text-7xl">Projects</h1>
       </div>
 
-      <div class=" bg-violet-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
+      <div class=" bg-violet-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+        <a href="https://github.com/ChingVey">
         <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/github-142-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
     <li class="list-none text-left pl-4 font-bold text-black">Github</li>
-      </div>
+      </a>
+    </div>
 
-      <div class=" bg-green-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
+      <div class=" bg-green-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+        <a href="tel:066849166">
         <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/phone-incoming-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg ">
     </div>
       <li class="list-none text-left pl-4 font-bold text-black">Phone</li>
-      </div>
+      </a>
+    </div>
 
       <div class=" bg-white rounded-[30px] text-center col-span-2 row-span-2">
         <video autoplay loop muted playsinline class="background-video cursor-default w-full h-full object-cover rounded-[29px]">
@@ -370,21 +374,25 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         </video>
       </div>
 
-      <div class=" bg-sky-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
+      <div class=" bg-sky-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+        <a href="in/lor-chingvey-126letsdoit29">
         <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/linkedin-round-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
     <li class="list-none text-left pl-4 font-bold text-black">Linkedin</li>
-      </div>
+      </a>
+    </div>
 
-      <div class=" bg-rose-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105">
+      <div class=" bg-rose-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+        <a href="https://t.me/Lor_JingVey">
         <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/telegram-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
       <li class="list-none text-left pl-4 font-bold text-black">Telegram</li>
-      </div>
+      </a>
+    </div>
 
     </div>
     
@@ -398,36 +406,46 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <h1 class="text-4xl text-left font-san pl-2"></h1>
         <h1 class="text-4xl text-left font-sam pl-2"></h1>
     </div>
-    <div class="bg-violet-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105">
+
+    <div class="bg-violet-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+      <a href="https://github.com/ChingVey">
       <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/github-142-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
     <li class="list-none text-left pl-4 font-bold text-black">Github</li>
+  </a>
   </div>
 
-    <div class="bg-green-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105">
+    <div class="bg-green-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+      <a href="tel:066849166">
       <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/phone-incoming-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
       <li class="list-none text-left pl-4 font-bold text-black">Phone</li>
+    </a>
     </div>
 
     <div class="bg-sky-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105">
+      <a href="in/lor-chingvey-126letsdoit29">
       <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/linkedin-round-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
     <li class="list-none text-left pl-4 font-bold text-black">Linkedin</li>
+  </a>
     </div>
 
-    <div class="bg-rose-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105">
+
+    <div class="bg-rose-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105 cursor-pointer">
+      <a href="https://t.me/Lor_JingVey">
       <div class="flex justify-between items-center p-3">
       <img class="w-12" src="/telegram-svgrepo-com.svg">
       <img class="w-12 animate-pulse" src="/arrow-up-right-svgrepo-com.svg">
     </div>
       <li class="list-none text-left pl-4 font-bold text-black">Telegram</li>
+    </a>
     </div>
 
     <div class="bg-white rounded-[30px] text-center col-span-4 row-span-4">
