@@ -135,7 +135,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       <h2 class="pt-12 font-bold text-3xl">Web Project</h2>
     <div class="flex justify-center p-8">
       <a class="transition duration-200 delay-175 hover:scale-105" href="https://chingvey.github.io/Ragnar.github.io/">
-      <img class="w-40 pt-4" src="/Group 18final logo.png">
+      <img class="w-40 pt-4" src="/logo.png">
     </a>
     </div>
     <h2 class="pt-8 text-3xl font-bold">UX-UI Project</h2>
@@ -268,7 +268,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       <h2 class="pt-4 font-bold">Web Project</h2>
     <div class="flex justify-center">
       <a href="https://chingvey.github.io/Ragnar.github.io/">
-      <img class="w-20 pt-4" src="/Group 18final logo.png">
+      <img class="w-20 pt-4" src="/logo.png">
     </a>
     </div>
     <h2 class="pt-4 font-bold">UX-UI Project</h2>
