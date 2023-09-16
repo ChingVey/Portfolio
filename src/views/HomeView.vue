@@ -39,21 +39,20 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <div class="col-span-4">
           <h5 class=" xl:text-8xl lg:text-7xl font-extrabold text-center">FRONTEND DEVELOPER</h5>
         </div>
-        <div class="col-span-4 flex justify-evenly items-center">
+        <div class="col-span-4 flex justify-around items-center">
           <div class="inlineblock">
             <h1 class="text-6xl font-bold"> Lor ChingVey</h1>
             <p class="font-bold text-lg pt-4">- Introduction</p>
-            <p class="text-3xl font-semibold pt-4">Frontend Developer and<span class="block">UX-UI Designer, based</span>
+            <p class="text-3xl font-semibold pt-4">Frontend Developer and UX-UI<span class="block">Designer, based in Phnom Penh.</span>
             </p>
-            <p class="text-3xl font-semibold">in Phnom Penh.</p>
-            <p class="text-sm pt-4"></p>
+            <p class="text-md pt-4"><span class="text-4xl font-serif">"</span> For me when I'm code there's no turning back <span class="text-4xl font-serif">"</span> </p>
             <div class="flex pt-4">
               <a href="#2nd"
-                class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-6">Get to
+                class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-3">Get to
                 Know me</a>
               <a @click="ModalOpen = true"
-                class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100">View
-                CV</a>
+                class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-3">Preview CV</a>
+                <a class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100" href="/CV.pdf">Download CV</a>
             </div>
           </div>
           <img class="w-[500px] object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
@@ -85,12 +84,15 @@ onClickOutside(modal, () => (ModalOpen.value = false))
         <p class="text-md sm:text-xl md:text-2xl font-semibold pt-7 text-center">Frontend Developer and UX-UI Designer,
         </p>
         <p class="text-md sm:text-xl md:text-2xl font-semibold text-center">Based in Phnom Penh.</p>
-        <p></p>
-        <div class="flex pt-8 justify-center">
+        <p class="text-md text-center"><span class="text-4xl font-serif">"</span> For me when I'm code there's no turning back <span class="text-4xl font-serif">"</span> </p>
+        <div class="flex pt-4 justify-center">
           <a href="#2nd" class="p-3 border border-1 transition duration-100 delay-100 mr-6">Get to Know me</a>
           <a @click="ModalOpen = true"
-            class="cursor-pointer py-3 px-6 border border-1 transition duration-100 delay-100">View CV</a>
+            class="cursor-pointer py-3 px-6 border border-1 transition duration-100 delay-100">Preview CV</a>
         </div>
+        <div class="text-center pt-6">
+        <a class="py-3 px-24 border border-1 transition duration-100 delay-100" href="/CV.pdf">Download CV</a>
+      </div>
       </div>
     </div>
   </main>
@@ -174,7 +176,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
           <div v-if="isModalOpen"
             class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
             <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
-              <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta delectus nesciunt,</a>
+              <a href="">A Highly creative and multitalented Frontend Development and UX-UI Designing
+              and highly skilled in socializing with client and co-worker. <span class="block">I like explore new technology as my daily routine.
+              And I like minimallistic design, because it gives me a user experince vibe and is easy to use.</span></a>
             </div>
           </div>
         </transition>
@@ -313,35 +317,37 @@ onClickOutside(modal, () => (ModalOpen.value = false))
             class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center overflow-hidden">
             <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
               A Highly creative and multitalented Frontend Development and UX-UI Designing
-              and highly skilled in socializing with client and co-worker.
+              and highly skilled in socializing with client and co-worker. <span class="block">I like explore new technology as my daily routine.
+              And I like minimallistic design, because it gives me a user experince vibe and is easy to use.</span>
+
             </div>
           </div>
         </transition>
       </teleport>
 
       <div
-        class="border-2 border-sky-white rounded-[30px] text-center col-span-4 text-white dark:border-black dark:text-white">
+        class="border-4 border-sky-white rounded-[30px] text-center col-span-4 text-white dark:border-black dark:text-white">
         <li class="list-none text-xl font-bold pt-3">Programming and Design Tools</li>
         <div class="flex items-center justify-center pt-4">
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://www.figma.com/">
               <img class="w-6" src="/figma-svgrepo-com.svg">
               <p class="text-white">Figma</p>
             </a>
           </div>
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://en.wikipedia.org/wiki/HTML"><img class="w-6"
                 src="/html5-svgrepo-com.svg">
               <p class="text-white">Html</p>
             </a>
           </div>
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://en.wikipedia.org/wiki/CSS">
               <img class="w-6" src="/css3-svgrepo-com.svg">
               <p class="text-white">Css</p>
             </a>
           </div>
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://en.wikipedia.org/wiki/JavaScript">
               <img class="w-6" src="/js-svgrepo-com.svg">
               <p class="text-white">Javascript</p>
@@ -349,19 +355,19 @@ onClickOutside(modal, () => (ModalOpen.value = false))
           </div>
         </div>
         <div class="flex items-center justify-center p-1.5">
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center  p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center  p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://www.adobe.com/">
               <img class="w-6" src="/adobe-illustrator-svgrepo-com.svg">
               <p class="text-white">Illutrator</p>
             </a>
           </div>
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://tailwindcss.com/">
               <img class="w-6" src="/tailwindcss-icon-svgrepo-com.svg">
               <p class="text-white">Tailwindcss</p>
             </a>
           </div>
-          <div class="bg-neutral-900 border-2 border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
+          <div class="bg-neutral-900 border-[1px] border-sky-400 flex items-center p-1.5 rounded-lg sm:p-3 mx-1">
             <a class="flex items-center" href="https://vuejs.org/">
               <img class="w-6" src="/vue-svgrepo-com.svg">
               <p class="text-white">Vue.js</p>
