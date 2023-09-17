@@ -426,7 +426,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
         </video>
       </div>
 
-      <a href="in/lor-chingvey-126letsdoit29"
+      <a href="www.linkedin.com/in/lor-chingvey-126letsdoit29"
         class=" bg-sky-300 rounded-[30px] text-center transition duration-200 delay-175 hover:scale-105 cursor-pointer">
         <div class="flex justify-between items-center p-3">
           <img class="w-12" src="/linkedin-round-svgrepo-com.svg">
@@ -477,7 +477,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
         <li class="list-none text-left pl-4 font-bold text-black">Phone</li>
       </a>
 
-      <a href="in/lor-chingvey-126letsdoit29"
+      <a href="www.linkedin.com/in/lor-chingvey-126letsdoit29"
         class="bg-sky-300 rounded-[30px] text-center col-span-2 transition duration-200 delay-175 hover:scale-105 cursor-pointer v-motion">
         <div class="flex justify-between items-center p-3">
           <img class="w-12" src="/linkedin-round-svgrepo-com.svg">
