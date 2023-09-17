@@ -65,7 +65,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
       <transition name="modal">
         <div v-if="ModalOpen1" class="fixed left-0 top-0 w-[100vw] h-[100vh] object-cover flex bg-black/50 justify-center items-center">
           <div class="relative p-12 rounded-2xl" ref="modal">
-            <img class="w-full h-screen cursor-pointer" src="/CVSample.png">
+            <img class="w-full h-screen cursor-pointer" src="/cvsample.png">
           </div>
         </div>
       </transition>
@@ -102,7 +102,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
     <transition name="modal">
       <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
         <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
-          <img class="w-96" src="/CVSample.png">
+          <img class="w-96" src="/cvsample.png">
         </div>
       </div>
     </transition>
