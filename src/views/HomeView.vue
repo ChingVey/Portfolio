@@ -6,13 +6,14 @@ import { onClickOutside } from '@vueuse/core'
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
-
+const ModalOpen1 = ref(false)
 const ModalOpen = ref(false)
 const isModalOpen = ref(false)
 
 const modal = ref(null)
 onClickOutside(modal, () => (isModalOpen.value = false))
 onClickOutside(modal, () => (ModalOpen.value = false))
+onClickOutside(modal, () => (ModalOpen1.value = false))
 
 </script>
 
@@ -50,9 +51,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
               <a href="#2nd"
                 class="p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-3">Get to
                 Know me</a>
-              <a @click="ModalOpen = true"
+              <a @click="ModalOpen1 = true"
                 class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100 mr-3">Preview CV</a>
-                <a class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100" href="/CV.pdf">Download CV</a>
+                <a class="cursor-pointer p-4 border border-1 hover:bg-white hover:text-black transition duration-100 delay-100" href="/MyCV.pdf">Download CV</a>
             </div>
           </div>
           <img class="w-[500px] object-cover bg-transparent rounded-[200px]" src="/TranPhoto.png">
@@ -62,9 +63,9 @@ onClickOutside(modal, () => (ModalOpen.value = false))
 
     <teleport to="#modal">
       <transition name="modal">
-        <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
+        <div v-if="ModalOpen1" class="fixed left-0 top-0 w-[100vw] h-[100vh] object-cover flex bg-black/50 justify-center items-center">
           <div class="relative p-12 rounded-2xl" ref="modal">
-            <img class="w-96 cursor-pointer" src="/CVSAMPLE.png">
+            <img class="w-full h-screen cursor-pointer" src="/CVSample.png">
           </div>
         </div>
       </transition>
@@ -91,7 +92,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
             class="cursor-pointer py-3 px-6 border border-1 transition duration-100 delay-100">Preview CV</a>
         </div>
         <div class="text-center pt-6">
-        <a class="py-3 px-24 border border-1 transition duration-100 delay-100" href="/CV.pdf">Download CV</a>
+        <a class="py-3 px-24 border border-1 transition duration-100 delay-100" href="/MyCV.pdf">Download CV</a>
       </div>
       </div>
     </div>
@@ -101,7 +102,7 @@ onClickOutside(modal, () => (ModalOpen.value = false))
     <transition name="modal">
       <div v-if="ModalOpen" class="fixed left-0 top-0 w-[100vw] h-[100vh] flex bg-black/50 justify-center items-center">
         <div class="relative p-12 rounded-2xl shadow-black/100" ref="modal">
-          <img class="w-96" src="/CVSAMPLE.png">
+          <img class="w-96" src="/CVSample.png">
         </div>
       </div>
     </transition>
@@ -133,19 +134,20 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       </div>
       <div
         class=" bg-white text-center row-span-3 rounded-r-[40px] text-black p-4 dark:bg-black dark:text-white">
-        <h1 class="text-5xl font-bold pt-8">Projects</h1>
-      <h2 class="pt-12 font-bold text-3xl">Web Project</h2>
+        <h1 class="text-7xl font-bold pt-8">Projects</h1>
     <div class="flex justify-center p-8">
       <a class="transition duration-200 delay-175 hover:scale-105" href="https://chingvey.github.io/Ragnar.github.io/">
       <img class="w-40 pt-4" src="/logo.png">
     </a>
     </div>
-    <h2 class="pt-8 text-3xl font-bold">UX-UI Project</h2>
+    <h2 class=" font-bold text-4xl">Web Project</h2>
+
     <div class="flex justify-center">
       <a class="transition duration-200 delay-175 hover:scale-105" href="https://www.figma.com/file/wl2NnucykSbuvSbwdLUJTc/Ragnar-Design?type=design&node-id=0-1&mode=design&t=u0MUrSU7xsC5uYxp-0">
-      <img class="w-40 pt-4" src="/figma-svgrepo-com.svg">
+      <img class="w-40 pt-8" src="/figma-svgrepo-com.svg">
     </a>
     </div>
+    <h2 class="pt-4 text-4xl font-bold">UX-UI Project</h2>
       </div>
       <div class=" bg-white text-black col-span-1 dark:bg-black dark:text-white">
         <li class="list-none text-xl font-bold p-4">Personal Infomation</li>
@@ -269,18 +271,19 @@ onClickOutside(modal, () => (ModalOpen.value = false))
       <div
         class="bg-white rounded-[30px] text-center row-span-2 col-span-2 text-black p-4 dark:bg-black dark:text-white">
       <h1 class="text-2xl font-bold">Projects</h1>
-      <h2 class="pt-4 font-bold">Web Project</h2>
     <div class="flex justify-center">
       <a href="https://chingvey.github.io/Ragnar.github.io/">
       <img class="w-20 pt-4" src="/logo.png">
     </a>
     </div>
-    <h2 class="pt-4 font-bold">UX-UI Project</h2>
+    <h2 class="pt-4 font-bold">Web Project</h2>
+
     <div class="flex justify-center">
       <a href="https://www.figma.com/file/wl2NnucykSbuvSbwdLUJTc/Ragnar-Design?type=design&node-id=0-1&mode=design&t=u0MUrSU7xsC5uYxp-0">
-      <img class="w-24 pt-4" src="/figma-svgrepo-com.svg">
+      <img class="w-24 pt-5" src="/figma-svgrepo-com.svg">
     </a>
     </div>
+    <h2 class="pt-2 font-bold">UX-UI Project</h2>
       </div>
       <div class="bg-white rounded-[30px] text-center col-span-2 text-black dark:bg-black dark:text-white">
         <li class="list-none text-sm sm:text-xl font-bold p-4">Personal Infomation</li>
