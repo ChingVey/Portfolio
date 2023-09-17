@@ -180,7 +180,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
             <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
               <a href="">A Highly creative and multitalented Frontend Development and UX-UI Designing
               and highly skilled in socializing with client and co-worker. <span class="block">I like explore new technology as my daily routine.
-              And I like minimallistic design, because it gives me a user experince vibe and is easy to use.</span></a>
+              And I like minimalistic design, because it gives me a user experience vibe and is easy to use.</span></a>
             </div>
           </div>
         </transition>
@@ -321,7 +321,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
             <div class="relative bg-white p-12 rounded-2xl shadow-black/100" ref="modal">
               A Highly creative and multitalented Frontend Development and UX-UI Designing
               and highly skilled in socializing with client and co-worker. <span class="block">I like explore new technology as my daily routine.
-              And I like minimallistic design, because it gives me a user experince vibe and is easy to use.</span>
+              And I like minimalistic design, because it gives me a user experience vibe and is easy to use.</span>
 
             </div>
           </div>
