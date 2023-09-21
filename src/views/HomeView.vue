@@ -497,7 +497,7 @@ onClickOutside(modal, () => (ModalOpen1.value = false))
 
       <div class=" text-center col-span-4 pt-12">
         <h1 class="text-7xl text-white">Thank You!</h1>
-        <p>Please View on large screen for a better a portfolio experince</p>
+        <p>Please View on large screen for a better a portfolio experience</p>
         <p class="text-7xl pt-12">🙏🏻😄</p>
       </div>
     </div>
